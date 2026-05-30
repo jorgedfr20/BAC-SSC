@@ -1,6 +1,9 @@
-import streamlit as st
-import pandas as pd
 from amplpy import AMPL
+from amplpy import modules
+
+modules.install(["highs"])
+
+ampl = AMPL()
 
 st.title("Asignación de Analistas - Programación Entera Binaria")
 
